@@ -107,6 +107,12 @@ jobs:
             type=sha,prefix=,format=short
             type=raw,value=latest
 
+      - name: Upload VEX document
+        uses: actions/upload-artifact@v4
+        with:
+          name: cicd-demo-app-vex
+          path: vex/openvex.json
+
       - name: Build and push Docker image
         id: build
         uses: docker/build-push-action@v6
