@@ -1,0 +1,5 @@
+# Require explicit review for CI/CD and deployment-sensitive files
+.github/workflows/* @senderend
+Dockerfile @senderend
+requirements.txt @senderend
+CODEOWNERS @senderend
